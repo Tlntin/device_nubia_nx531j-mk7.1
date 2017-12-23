@@ -13,14 +13,11 @@ source build/envsetup.sh
 2.设置加快编译速度
 
  export USE_CCACHE=1
- 
-3.加入root
 
-export WITH_SU=true
 
 4.设置缓存
 
- ~/aokp/prebuilts/misc/linux-x86/ccache/ccache -M 80G
+ ~/mk/prebuilts/misc/linux-x86/ccache/ccache -M 80G
 
 
  export JACK_SERVER_VM_ARGUMENTS="-Dfile.encoding=UTF-8 -XX:+TieredCompilation -Xmx16000m"（本人内存8g，所以这里允许内存填8192M）
